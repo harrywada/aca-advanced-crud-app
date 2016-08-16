@@ -1,5 +1,10 @@
-const mongoose = require('mongoose');
-const Schema   = mongoose.Schema;
+var mongoose = require("mongoose");
+var Schema   = mongoose.Schema;
 
-// TODO: Write your PostModel schema here
-// Hint: Don't for get to export it!
+var postSchema = new Schema({
+  title:   {type: String, required: true},
+  date:    {type: Date, required: true},
+  content: String
+});
+
+module.exports = mongoose.model("Post", postSchema);

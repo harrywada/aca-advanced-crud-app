@@ -1,0 +1,127 @@
+body {
+  background-color: #2c3e50; }
+
+button, button:focus {
+  cursor: pointer;
+  border: 0 solid;
+  outline: 0; }
+
+#alert {
+  position: fixed;
+  left: 50%;
+  top: 5%;
+  transform: translateX(-50%);
+  z-index: 1;
+  padding: 10px 20px;
+  color: #ecf0f1;
+  display: none; }
+  #alert button, #alert button:focus {
+    margin-left: 15px;
+    color: #ecf0f1; }
+
+#nav {
+  width: 33%;
+  height: 100vh;
+  display: inline-block;
+  vertical-align: top;
+  float: left;
+  background-color: #bdc3c7;
+  overflow-x: hidden;
+  min-width: 360px; }
+  #nav #add {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background-color: #2c3e50; }
+    #nav #add #create {
+      position: absolute;
+      width: 90%;
+      height: 85%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #ecf0f1;
+      background-color: #2ecc71;
+      font-size: 100px; }
+  #nav #posts {
+    width: 100%; }
+    #nav #posts .post {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 60px;
+      padding: 10px;
+      margin-bottom: 10px;
+      color: #34495e;
+      background-color: #ecf0f1; }
+      #nav #posts .post .title {
+        position: absolute;
+        top: 5px;
+        left: 10px;
+        font-size: 40px;
+        cursor: pointer; }
+      #nav #posts .post .date {
+        position: absolute;
+        bottom: 5px;
+        left: 10px; }
+      #nav #posts .post .edit, #nav #posts .post .edit:focus {
+        position: absolute;
+        height: 30px;
+        top: 50%;
+        right: 75px;
+        transform: translateY(-50%);
+        color: #ecf0f1;
+        background-color: #2ecc71;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 5px 10px; }
+      #nav #posts .post .close, #nav #posts .post .close:focus {
+        position: absolute;
+        height: 30px;
+        top: 50%;
+        right: 35px;
+        transform: translateY(-50%);
+        color: #ecf0f1;
+        background-color: #e74c3c;
+        padding: 5px 10px; }
+
+#view {
+  width: 66%;
+  height: 100vh;
+  display: inline-block;
+  vertical-align: top;
+  float: right;
+  overflow-y: scroll;
+  background-color: #95a5a6; }
+  #view .view {
+    width: 90%;
+    margin: 10vh auto;
+    background-color: #ecf0f1;
+    min-height: 60vh; }
+  #view #edit-view {
+    display: none;
+    text-align: center; }
+    #view #edit-view .title {
+      width: 90%;
+      margin-top: 25px;
+      font-size: 75px; }
+    #view #edit-view .content {
+      width: 90%;
+      margin-top: 25px; }
+    #view #edit-view .submit {
+      padding: 10px 25px;
+      margin: 25px 0px;
+      color: #ecf0f1;
+      background-color: #2ecc71; }
+  #view #read-view {
+    padding: 20px 10px;
+    text-align: center; }
+    #view #read-view .title {
+      width: 90%;
+      margin: 50px auto 0 auto;
+      font-size: 75px; }
+    #view #read-view .content {
+      width: 90%;
+      margin: 25px auto 25px auto; }
+
+/*# sourceMappingURL=style.css.map */

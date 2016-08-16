@@ -1,21 +1,17 @@
 {
-  "name": "crud-app",
+  "name": "blog",
   "version": "1.0.0",
-  "description": "A starter repo for the ACA Advanced Course CRUD application.",
-  "main": "index.js",
+  "description": "",
+  "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Harry Wada",
+  "license": "UNLICENSED",
   "dependencies": {
     "body-parser": "^1.15.2",
     "ejs": "^2.5.1",
     "express": "^4.14.0",
-    "mongoose": "^4.5.8"
-  },
-  "devDependencies": {
-    "nodemon": "^1.10.0"
+    "mongoose": "^4.5.9"
   }
 }
