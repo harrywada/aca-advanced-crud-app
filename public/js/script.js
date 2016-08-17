@@ -89,6 +89,8 @@ function createPost(title, content, callback = function(){}){
   var status;
   var post;
 
+  title = title.trim();
+
   $.ajax({
     method: "POST",
     url: "/posts/",
@@ -122,6 +124,8 @@ function createPost(title, content, callback = function(){}){
 function updatePost(id, title, content, callback = function(){}){
   var status;
   var post;
+
+  title = title.trim();
 
   $.ajax({
     method: "PUT",
